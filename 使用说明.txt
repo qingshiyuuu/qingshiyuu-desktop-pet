@@ -1,0 +1,16 @@
+卿诗雨 · 会聊天的红发桌宠
+
+完整说明见 README.md。
+
+自己电脑上运行（开发版）
+- 双击“启动桌宠.vbs”，或在本文件夹运行 npm start。
+
+给朋友用
+- 把 dist\CrimsonPet-Setup-1.1.0.exe（安装版）或 dist\CrimsonPet-Portable-1.1.0.exe（便携版）发给对方，双击即可，不需要装 Node。
+
+操作速记
+- 单击：戳她　双击：聊天　拖动：拎起来/甩出去　右键：菜单（设置、主动搭话、动作、大小、退出）
+- 聊天需要在 右键 → 设置… 里填 DeepSeek API Key。
+
+数据位置
+- %APPDATA%\CrimsonPet\：settings.json（Key 已加密）、chat-history.json、memory.json、reminders.json

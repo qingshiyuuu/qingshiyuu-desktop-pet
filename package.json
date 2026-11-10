@@ -1,0 +1,56 @@
+{
+  "name": "desktop-pet-electron",
+  "productName": "CrimsonPet",
+  "version": "1.1.0",
+  "description": "卿诗雨 · 会聊天的红发桌宠（Electron + DeepSeek）",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "verify": "electron . --verify",
+    "dist": "electron-builder --win --x64"
+  },
+  "keywords": ["desktop-pet", "electron", "deepseek"],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "local.redhair.desktoppet",
+    "productName": "CrimsonPet",
+    "copyright": "Crimson Pet",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "settings-preload.js",
+      "llm.js",
+      "proactive.js",
+      "renderer/**",
+      "assets/**",
+      "package.json"
+    ],
+    "win": {
+      "icon": "build/icon.png",
+      "target": [
+        { "target": "nsis", "arch": ["x64"] },
+        { "target": "portable", "arch": ["x64"] }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "卿诗雨 · 桌宠",
+      "artifactName": "CrimsonPet-Setup-${version}.exe"
+    },
+    "portable": {
+      "artifactName": "CrimsonPet-Portable-${version}.exe"
+    }
+  }
+}

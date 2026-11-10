@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'">
+  <title>卿诗雨</title>
+  <link rel="stylesheet" href="pet.css">
+</head>
+<body>
+  <div id="stage">
+    <form id="chat" class="chat interactive" autocomplete="off">
+      <input id="chat-input" maxlength="300" placeholder="跟卿诗雨说点什么…" spellcheck="false">
+      <button type="submit" id="chat-send" title="发送（Enter）">➤</button>
+    </form>
+    <div id="bubble" class="bubble" aria-live="polite"><span id="bubble-text"></span></div>
+    <div id="emote" class="emote" aria-hidden="true"></div>
+    <div id="shadow"></div>
+    <canvas id="pet" aria-label="卿诗雨"></canvas>
+  </div>
+  <script src="lines.js"></script>
+  <script src="state-machine.js"></script>
+  <script src="animator.js"></script>
+  <script src="pet.js"></script>
+</body>
+</html>

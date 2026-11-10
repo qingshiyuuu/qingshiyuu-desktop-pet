@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "image": "idle_sprite_cell512x768.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2048,
+      "h": 2304
+    },
+    "scale": 0.5
+  },
+  "layout": {
+    "columns": 4,
+    "rows": 3,
+    "cellWidth": 512,
+    "cellHeight": 768,
+    "order": "row-major"
+  },
+  "anchor": {
+    "x": 256.0,
+    "y": 759.0
+  },
+  "frames": {
+    "breath_00": {
+      "index": 0,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 900,
+      "duration": 900,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "breath_01": {
+      "index": 1,
+      "frame": {
+        "x": 512,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 600,
+      "duration": 600,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "breath_02": {
+      "index": 2,
+      "frame": {
+        "x": 1024,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 900,
+      "duration": 900,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "breath_03": {
+      "index": 3,
+      "frame": {
+        "x": 1536,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 600,
+      "duration": 600,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "smoke_00": {
+      "index": 4,
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 200,
+      "duration": 200,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "smoke_01": {
+      "index": 5,
+      "frame": {
+        "x": 512,
+        "y": 768,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 250,
+      "duration": 250,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "smoke_02": {
+      "index": 6,
+      "frame": {
+        "x": 1024,
+        "y": 768,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 450,
+      "duration": 450,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "smoke_03": {
+      "index": 7,
+      "frame": {
+        "x": 1536,
+        "y": 768,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 300,
+      "duration": 300,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "smoke_04": {
+      "index": 8,
+      "frame": {
+        "x": 0,
+        "y": 1536,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 350,
+      "duration": 350,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "smoke_05": {
+      "index": 9,
+      "frame": {
+        "x": 512,
+        "y": 1536,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 450,
+      "duration": 450,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "smoke_06": {
+      "index": 10,
+      "frame": {
+        "x": 1024,
+        "y": 1536,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 600,
+      "duration": 600,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "smoke_07": {
+      "index": 11,
+      "frame": {
+        "x": 1536,
+        "y": 1536,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 300,
+      "duration": 300,
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    }
+  },
+  "sequences": {
+    "breathe": {
+      "frames": [
+        "breath_00",
+        "breath_01",
+        "breath_02",
+        "breath_03"
+      ],
+      "durationMs": 3000,
+      "loop": true
+    },
+    "smoke": {
+      "frames": [
+        "smoke_00",
+        "smoke_01",
+        "smoke_02",
+        "smoke_03",
+        "smoke_04",
+        "smoke_05",
+        "smoke_06",
+        "smoke_07"
+      ],
+      "durationMs": 2900,
+      "loop": false,
+      "next": "breathe"
+    }
+  },
+  "idlePolicy": {
+    "defaultSequence": "breathe",
+    "breatheLoopsBeforeSmoke": {
+      "min": 5,
+      "max": 9,
+      "randomizeEachEvent": true
+    },
+    "interruptAtLoopBoundary": true,
+    "eventSequence": "smoke",
+    "resumeSequence": "breathe"
+  },
+  "previewPolicy": {
+    "breatheLoopsBeforeSmoke": 2,
+    "totalDurationMs": 8900
+  },
+  "notes": [
+    "通用自定义atlas清单；须按目标桌宠引擎适配读取。",
+    "12个编号格，包含复用帧，不表示12FPS。",
+    "所有头发、脸、手臂、裤鞋和人物外轮廓均来自同一个主图层；呼吸只在内部衣料小区域变化。"
+  ]
+}

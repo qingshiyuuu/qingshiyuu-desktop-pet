@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "image": "mock_angry_sprite_cell512x768.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1536,
+      "h": 1536
+    },
+    "scale": 0.5
+  },
+  "layout": {
+    "columns": 3,
+    "rows": 2,
+    "cellWidth": 512,
+    "cellHeight": 768,
+    "order": "row-major"
+  },
+  "anchor": {
+    "x": 256.0,
+    "y": 759.0
+  },
+  "frames": {
+    "mock_angry_00": {
+      "index": 0,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 120,
+      "duration": 120,
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "mock_angry_01": {
+      "index": 1,
+      "frame": {
+        "x": 512,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 180,
+      "duration": 180,
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "mock_angry_02": {
+      "index": 2,
+      "frame": {
+        "x": 1024,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 220,
+      "duration": 220,
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "mock_angry_03": {
+      "index": 3,
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 850,
+      "duration": 850,
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "mock_angry_04": {
+      "index": 4,
+      "frame": {
+        "x": 512,
+        "y": 768,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 180,
+      "duration": 180,
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    },
+    "mock_angry_05": {
+      "index": 5,
+      "frame": {
+        "x": 1024,
+        "y": 768,
+        "w": 512,
+        "h": 768
+      },
+      "durationMs": 120,
+      "duration": 120,
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 512,
+        "h": 768
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 768
+      },
+      "anchor": {
+        "x": 256.0,
+        "y": 759.0
+      }
+    }
+  },
+  "sequence": {
+    "name": "mock_angry",
+    "frames": [
+      "mock_angry_00",
+      "mock_angry_01",
+      "mock_angry_02",
+      "mock_angry_03",
+      "mock_angry_04",
+      "mock_angry_05"
+    ],
+    "durationMs": 1670,
+    "loop": false,
+    "next": "idle.breathe"
+  },
+  "notes": [
+    "通用atlas示例，需要适配目标桌宠引擎。",
+    "预览会循环展示，正式播放的loop字段决定是否循环。"
+  ]
+}

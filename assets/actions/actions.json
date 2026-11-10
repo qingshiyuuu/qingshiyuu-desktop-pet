@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "assetVersion": 3,
+  "name": "红发女主桌宠动作素材",
+  "totalFrameSlots": 38,
+  "notes": [
+    "格数包含复用姿势，不等于独立图像数或FPS。",
+    "每格画布尺寸统一，整张精灵图大小随行列数变化。",
+    "通用动作与atlas清单，需要在目标桌宠引擎中适配。"
+  ],
+  "variants": {
+    "full": {
+      "cellWidth": 1024,
+      "cellHeight": 1536,
+      "anchor": {
+        "x": 512,
+        "y": 1518
+      }
+    },
+    "compact": {
+      "cellWidth": 512,
+      "cellHeight": 768,
+      "anchor": {
+        "x": 256,
+        "y": 759
+      }
+    }
+  },
+  "actions": {
+    "idle": {
+      "label": "闲态",
+      "frameSlots": 12,
+      "atlases": {
+        "full": "idle/idle_atlas_cell1024x1536.json",
+        "compact": "idle/idle_atlas_cell512x768.json"
+      },
+      "sprites": {
+        "full": "idle/idle_sprite_cell1024x1536.png",
+        "compact": "idle/idle_sprite_cell512x768.png"
+      },
+      "sequences": {
+        "breathe": {
+          "loop": true,
+          "durationMs": 3000
+        },
+        "smoke": {
+          "loop": false,
+          "durationMs": 2900,
+          "next": "idle.breathe"
+        }
+      },
+      "sourceVersion": "v2 files preserved byte-for-byte"
+    },
+    "walk": {
+      "label": "走路",
+      "frameSlots": 8,
+      "durationMs": 880,
+      "loop": true,
+      "defaultNext": null,
+      "atlases": {
+        "full": "walk/walk_atlas_cell1024x1536.json",
+        "compact": "walk/walk_atlas_cell512x768.json"
+      },
+      "sprites": {
+        "full": "walk/walk_sprite_cell1024x1536.png",
+        "compact": "walk/walk_sprite_cell512x768.png"
+      },
+      "previews": {
+        "transparentWebp": "walk/walk_preview_v3.webp",
+        "darkGif": "walk/walk_preview_v3.gif"
+      },
+      "direction": "right",
+      "inPlace": true,
+      "positionUpdatedByHost": true,
+      "mirrorAlias": "walk_left"
+    },
+    "think": {
+      "label": "思考",
+      "frameSlots": 6,
+      "durationMs": 2120,
+      "loop": false,
+      "defaultNext": "idle.breathe",
+      "atlases": {
+        "full": "think/think_atlas_cell1024x1536.json",
+        "compact": "think/think_atlas_cell512x768.json"
+      },
+      "sprites": {
+        "full": "think/think_sprite_cell1024x1536.png",
+        "compact": "think/think_sprite_cell512x768.png"
+      },
+      "previews": {
+        "transparentWebp": "think/think_preview_v3.webp",
+        "darkGif": "think/think_preview_v3.gif"
+      }
+    },
+    "resigned": {
+      "label": "无奈",
+      "frameSlots": 6,
+      "durationMs": 1500,
+      "loop": false,
+      "defaultNext": "idle.breathe",
+      "atlases": {
+        "full": "resigned/resigned_atlas_cell1024x1536.json",
+        "compact": "resigned/resigned_atlas_cell512x768.json"
+      },
+      "sprites": {
+        "full": "resigned/resigned_sprite_cell1024x1536.png",
+        "compact": "resigned/resigned_sprite_cell512x768.png"
+      },
+      "previews": {
+        "transparentWebp": "resigned/resigned_preview_v3.webp",
+        "darkGif": "resigned/resigned_preview_v3.gif"
+      }
+    },
+    "mock_angry": {
+      "label": "佯怒",
+      "frameSlots": 6,
+      "durationMs": 1670,
+      "loop": false,
+      "defaultNext": "idle.breathe",
+      "atlases": {
+        "full": "mock_angry/mock_angry_atlas_cell1024x1536.json",
+        "compact": "mock_angry/mock_angry_atlas_cell512x768.json"
+      },
+      "sprites": {
+        "full": "mock_angry/mock_angry_sprite_cell1024x1536.png",
+        "compact": "mock_angry/mock_angry_sprite_cell512x768.png"
+      },
+      "previews": {
+        "transparentWebp": "mock_angry/mock_angry_preview_v3.webp",
+        "darkGif": "mock_angry/mock_angry_preview_v3.gif"
+      }
+    }
+  },
+  "aliases": {
+    "walk_left": {
+      "action": "walk",
+      "flipX": true,
+      "note": "水平镜像复用右向步态；水平位移由程序控制。"
+    }
+  },
+  "recommendedTransitions": {
+    "default": "idle.breathe",
+    "idleSmoke": {
+      "afterBreatheLoops": {
+        "min": 5,
+        "max": 9
+      },
+      "returnTo": "idle.breathe"
+    },
+    "walk": {
+      "enterWhen": "movement begins",
+      "exitWhen": "movement ends",
+      "returnTo": "idle.breathe",
+      "positionUpdatedByHost": true
+    },
+    "gestures": {
+      "actions": [
+        "think",
+        "resigned",
+        "mock_angry"
+      ],
+      "trigger": "explicit interaction or host decision",
+      "playOnce": true,
+      "returnTo": "idle.breathe"
+    }
+  }
+}

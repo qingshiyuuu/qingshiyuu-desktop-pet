@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'">
+  <title>卿诗雨 · 设置</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="avatar" aria-hidden="true"></div>
+    <div>
+      <h1>卿诗雨</h1>
+      <p class="tagline">住在你桌面上的红发女生 · 嘴硬心软</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>她的大脑 <span class="badge" id="brain-badge">未连接</span></h2>
+      <label class="field">
+        <span>DeepSeek API Key</span>
+        <div class="row">
+          <input id="api-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…">
+          <button type="button" class="ghost" id="toggle-key" title="显示/隐藏">👁</button>
+        </div>
+        <small>还没有？<a href="#" id="get-key">去 DeepSeek 开放平台创建一个</a>。Key 只加密保存在这台电脑上。</small>
+      </label>
+
+      <details class="advanced">
+        <summary>高级：模型与接口地址</summary>
+        <label class="field">
+          <span>模型</span>
+          <input id="model" type="text" list="models" spellcheck="false">
+          <datalist id="models">
+            <option value="deepseek-chat">
+          </datalist>
+        </label>
+        <label class="field">
+          <span>接口地址（OpenAI 兼容）</span>
+          <input id="base-url" type="text" spellcheck="false">
+          <small>换成通义、Kimi 等兼容接口也可以，但需要支持工具调用。</small>
+        </label>
+      </details>
+
+      <div class="row actions">
+        <button type="button" id="test">测试连接</button>
+        <button type="button" class="ghost danger" id="clear-key">移除 Key</button>
+      </div>
+      <div class="reply hidden" id="test-result"></div>
+    </section>
+
+    <section class="card">
+      <h2>相处方式</h2>
+      <label class="field">
+        <span>她怎么称呼你</span>
+        <input id="nickname" type="text" maxlength="20" placeholder="留空的话，她会自己找机会问你">
+      </label>
+      <div class="field">
+        <span>主动搭话</span>
+        <div class="segmented" role="radiogroup" id="proactive">
+          <label><input type="radio" name="proactive" value="off"><span>关闭</span></label>
+          <label><input type="radio" name="proactive" value="occasional"><span>偶尔</span></label>
+          <label><input type="radio" name="proactive" value="chatty"><span>话痨</span></label>
+        </div>
+        <small>你回到电脑前、深夜还没睡、连续工作太久、或者她闲得无聊时，会自己开口。凌晨 1 点到 8 点不打扰。</small>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>她的小本本</h2>
+      <ul class="memory" id="memory"></ul>
+      <div class="row actions">
+        <button type="button" class="ghost" id="clear-history">清空聊天记录</button>
+        <button type="button" class="ghost danger" id="clear-memory">清空小本本</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="toast" id="toast"></span>
+    <button type="button" class="primary" id="save">保存</button>
+  </footer>
+
+  <script src="settings.js"></script>
+</body>
+</html>
